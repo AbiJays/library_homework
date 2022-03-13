@@ -42,28 +42,33 @@ while option != "q":
         print("Listing all books...")
         # TODO - List all books
         print(library["books"])
-            # it's got to be a number but if i say [n0] then it prints that one repeatedly
 
     if option == "2":
         print("Searching for a book by title...")
         # TODO - Search for a book by title
-        title = input("Please enter the title of the book you are looking for... ")
-        if title == library["books"][title]:
-            print("Yes, we have " + library["books"][title] + "in the library")
-        else: print("We don't have that book unfortunately")
-        # USER INPUT
-            # 
+        suggested_title = input("Please enter the title of the book you are looking for... ")
+        for book in library["books"][0]:
+            if suggested_title == library["books"]:
+                print("Yes, we have " + library["books"] + "in the library")
+            else: 
+                print("We don't have that book unfortunately")
 
     if option == "3":
         print("Adding a book...")
         # TODO - Add a book
-        Author = input("Please enter the name of the author of the book you wish to add")
+        added_author = input("Please enter the name of the author of the book you wish to add")
+        library["books"]
+        added_book = input("Please enter the name of the book you wish to add")
         library["books"]
 
     if option == "4":
         print("Removing a book...")
         # TODO - Remove a book
+        # for books in book:
+        #     print library["books"].index(title)
+        # print(library["books"])
 
     if option == "5":
         print("Updating a book...")
         # TODO - Update a book
+        library["books"].update({})
