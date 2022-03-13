@@ -47,9 +47,9 @@ while option != "q":
         print("Searching for a book by title...")
         # TODO - Search for a book by title
         suggested_title = input("Please enter the title of the book you are looking for... ")
-        for book in library["books"][0]:
-            if suggested_title == library["books"]:
-                print("Yes, we have " + library["books"] + "in the library")
+        for book in library["books"]:
+            if suggested_title == book["title"]:
+                print("Yes, we have " + book["title"] + "in the library")
             else: 
                 print("We don't have that book unfortunately")
 
